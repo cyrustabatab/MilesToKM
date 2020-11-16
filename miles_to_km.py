@@ -23,6 +23,8 @@ def calculate_km():
 def radio_used():
 
     radio_value = radio_state.get()
+    miles_entry.delete(0,tkinter.END)
+    miles_entry.insert(tkinter.END,"0")
     if radio_value == 1:
         miles_label["text"] =  'Miles'
         km_label['text'] = 'KM'
